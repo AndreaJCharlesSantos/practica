@@ -490,6 +490,45 @@
 							<li class="nav-item"><a href="form_input_groups_Eliminar_Vacaciones.php" class="nav-link">Eliminar vacaciones</a></li>					
 						</ul>
 					</li>
+				</li>
+				<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Alumnos</div> <i class="icon-menu" title="Forms"></i></li>
+					<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Alumnos</span></a>
+						<ul class="nav nav-group-sub" data-submenu-title="Form components">
+							<li class="nav-item">
+								<a href="datatable_basic_alumnos.php" class="nav-link">
+								<i class="icon-home4"></i>
+
+								<span>
+									Tabla
+								</span>
+								</a>
+							</li>
+							<li class="nav-item"><a href="form_input_groups__Agregar_alumno.php" class="nav-link">Ingresar alumno</a></li>
+							<li class="nav-item"><a href="form_input_groups_Empresas_Modificar_alumno.php" class="nav-link">Modificar alumno</a></li>
+							<li class="nav-item"><a href="form_input_groups_Eliminar_alumno.php" class="nav-link">Eliminar alumno</a></li>
+						</ul>
+					</li>
+				</li>
+				<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tutoría</div> <i class="icon-menu" title="Forms"></i></li>
+					<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Tutoría</span></a>
+						<ul class="nav nav-group-sub" data-submenu-title="Form components">
+							<li class="nav-item">
+								<a href="datatable_basic_alumnos.php" class="nav-link">
+								<i class="icon-home4"></i>
+
+								<span>
+									Tabla
+								</span>
+								</a>
+							</li>
+							<li class="nav-item"><a href="form_input_groups__Agregar_tutoría.php" class="nav-link">Ingresar tutoría</a></li>
+							<li class="nav-item"><a href="form_input_groups_Empresas_Modificar_tutoría.php" class="nav-link">Modificar tutoría</a></li>
+							<li class="nav-item"><a href="form_input_groups_Eliminar_tutoría.php" class="nav-link">Eliminar tutoría</a></li>
+						</ul>
+					</li>
+				</li>	
 						<!--
 
 						<li class="nav-item nav-item-submenu">

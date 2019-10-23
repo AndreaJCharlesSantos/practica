@@ -513,7 +513,7 @@
 						</ul>
 					</li>
 				</li>
-				<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tutoría</div> <i class="icon-menu" title="Forms"></i></li>
+								<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tutoría</div> <i class="icon-menu" title="Forms"></i></li>
 					<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Tutoría</span></a>
 						<ul class="nav nav-group-sub" data-submenu-title="Form components">
@@ -531,7 +531,8 @@
 							<li class="nav-item"><a href="form_input_groups_Eliminar_tutoría.php" class="nav-link">Eliminar tutoría</a></li>
 						</ul>
 					</li>
-				</li>	
+				</li>
+
 
 						<!-- /forms -->
 						
@@ -1113,7 +1114,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Empresas</span> - Basic</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tutorias</span> - Basic</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1171,7 +1172,7 @@
 				<!-- Basic datatable -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Listado de empresas</h5>
+						<h5 class="card-title">Listado de tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1182,13 +1183,13 @@
 					</div>
 
 					<div class="card-body">
-						<p>Lista de empresas</p>
+						<p>Lista de tutorias dadas a los alumnos</p>
 
 						<div class="btn-group">
 					    	 <button type="button" class="btn btn-outline bg-slate-600 text-slate-600 border-slate dropdown-toggle" data-toggle="dropdown">Ajustes</button>
 					   	 	<div class="dropdown-menu dropdown-menu-right">
-							<a href="form_input_groups_Empresas_Modificar.html" class="dropdown-item"><i class="icon-menu7"></i>Modificar</a>
-							<a href="form_input_groups_Eliminar_Empresas.html" class="dropdown-item"><i class="icon-screen-full"></i>Eliminar</a>
+							<a href="form_input_groups_Empresas_Modificar.php" class="dropdown-item"><i class="icon-menu7"></i>Modificar</a>
+							<a href="form_input_groups_Eliminar_Empresas.php" class="dropdown-item"><i class="icon-screen-full"></i>Eliminar</a>
 							</div>
 						</div>
 					</div>
@@ -1197,16 +1198,15 @@
 						<thead>
 							<tr>
 								<th></th>
-								<th>Número de empresa</th>
-								<th>Nombre de la empresa</th>
-								<th>Estructura jurídica de la empresa</th>
-								<th>Dirección</th>
-								<th>Correo electrónico</th>
-								<th>RFC</th>
-								<th>País</th>
-								<th>Ciudad</th>
-								<th>Estado</th>
-								<th>Código postal</th>
+								<th>ID</th>
+								<th>Fecha de la sesión</th>
+								<th>Tema atendido por el tutor</th>
+								<th>Nombre del empleado (tutor)</th>
+								<th>Número del empleado</th>
+								<th>Departamento asignado</th>
+								<th>Matrícula del alumno</th>
+								<th>Nombre del alumno</th>
+								<th>Carrera que está cursando</th>
 							</tr>
 						</thead>
 					<tbody>
@@ -1221,17 +1221,17 @@
 				                		</div>
 								</td>
 								<td><a href="#">001</a></td>
-								<td>AmbienT</td>
-								<td>Sociedad cooperativa</td>
-								<td>Nueva Ciudad Guerrero</td>
-								<td>AmbienT@hotmail.com</td>
-								<td>AJCS800822569</td>
-								</td>
-								<td>México</td>
-								<td>Cd. Victoria</td>
-								<td>Tamaulipas</td>
-								<td>87010</td>
+								<td>11 de Septiembre de 2019</td>
+								<td>Álgebra</td>
+								<td>Yeritzi Adalid Carrera Pineda</td>
+								<td>004</td>
+								<td>Financiero</td>
+								<td>1930875</td>
+								<td>Rut Abigail Zapata Olvera</td>
+								<td>Diseño gráfico</td>
+
 							</tr>
+
 							<tr></tr>
 							<tr>
 								<td> <div class="list-icons">
@@ -1244,15 +1244,14 @@
 				                	</div>				
 								</td>
 								<td><a href="#">002</a></td>
-								<td>Globolandia</td>
-								<td>Sociedad anonima</td>
-								<td>Zaragoza Poniente</td>
-											<td class="text-center">GlobosA@hotmail.com</td>
-								<td>CUPU800825569</td>
-								<td>México</td>
-								<td>Cd.Victoria</td>
-								<td>Tamaulipas</td>
-								<td>87000</td>
+								<td>22 de Septiembre de 2019</td>
+								<td>Contabilidad</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>001</td>
+								<td>Administrativo</td>
+								<td>1930427</td>
+								<td>Larissa Quezada Mártínez</td>
+								<td>Animación</td>
 							</tr>
 							<tr>
 								<td> <div class="list-icons">
@@ -1265,15 +1264,14 @@
 				                </div>
 								</td>
 								<td><a href="#">003</a></td>
-								<td>Consultora</td>
-								<td>Sociedad anonima</td>
-								<td>Avenida Nuevas tecnologías</td>
-											<td class="text-center">consultora@hotmail.com</td>
-								<td>COS7008685945</td>
-								<td>México</td>
-								<td>Cd.Victoria</td>
-								<td>Tamaulipas</td>
-								<td>87138</td>
+								<td>18 de Septiembre de 2019</td>
+								<td>Programación</td>
+								<td>Joseline Charles Santos</td>
+								<td>007</td>
+								<td>Sistemas</td>
+								<td>1930458</td>
+								<td>José Ángel López Pérez</td>
+								<td>Ingeniería industrial</td>
 							</tr>
 							<tr>
 								<td> <div class="list-icons">
@@ -1286,15 +1284,14 @@
 				                </div>
 								</td>
 								<td><a href="#">004</a></td>
-								<td>Veterinaria: "Los michis"</td>
-								<td>Sociedad cooperativa</td>
-								<td>Enrique Cardenas</td>
-											<td class="text-center">michis@hotmail.com</td>
-								<td>VELM800976</td>
-								<td>México</td>
-								<td>Monterrey</td>
-								<td>Nuevo León.</td>
-								<td>64000</td>
+								<td>10 de Septiembre de 2019</td>
+								<td>Marketing</td>
+								<td>Anel Báez Guerrero</td>
+								<td>005</td>
+								<td>Marketing</td>
+								<td>1930875</td>
+								<td>Rut Abigail Zapata Olvero</td>
+								<td>Diseño gráfico</td>
 							</tr>
 							<tr>
 								<td> <div class="list-icons">
@@ -1306,22 +1303,350 @@
 				                	</a>
 				                </div>
 								</td>
-								<td><a href="#">005</a></td>
-								<td>Tecnologías Milenio</td>
-								<td>Sociedad anonima</td>
-								<td>Zeferino Fajardo</td>
-											<td class="text-center">tecmilenio@hotmail.com</td>
-								<td>TMAN010619</td>
-								<td>México</td>
-								<td>Guadalajara</td>
-								<td>Jalisco</td>
-								<td>44100</td>
+									<td><a href="#">005</a></td>
+								<td>2 de Octubre de 2019</td>
+								<td>Álgebra</td>
+								<td>Yeritzi Adalid Carrera</td>
+								<td>004</td>
+								<td>Financiero</td>
+								<td>1930427</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>Tecnologías de la información</td>
 							</tr>
-						</tbody>
-					</table>
+							<tr>
+								<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">006</a></td>
+								<td>3 de Octubre de 2019</td>
+								<td>Cálculo integral</td>
+								<td>Yeritzi Adalid Carrera</td>
+								<td>004</td>
+								<td>Financiero</td>
+								<td>1930452</td>
+								<td>José Ángel López Pérez</td>
+								<td>Ingeniería industrial</td>
+
+							</tr>
+							<tr>
+								<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">007</a></td>
+								<td>5 de Octubre de 2019</td>
+								<td>Álgebra</td>
+								<td>Yertizi Adalid Carrera</td>
+								<td>004</td>
+								<td>Financiero</td>
+								<td>1930458</td>
+								<td>Larissa Quezada Martínez</td>
+								<td>Animación</td>
+							</tr>
+						<tr>
+								<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">008</a></td>
+								<td>6 de Octubre de 2019</td>
+								<td>Física</td>
+								<td>Yeritzi Adalid Carrera</td>
+								<td>004</td>
+								<td>Financiero</td>
+								<td>1930427</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>Tecnologías de la información</td>
+						</tr>
+						<tr>
+								<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">009</a></td>
+								<td>8 de Octubre de 2019</td>
+								<td>Administración</td>
+								<td>Aldo Puga Vega</td>
+								<td>002</td>
+								<td>Administración</td>
+								<td>19304875</td>
+								<td>Rut Abigail Zapata Olvera</td>
+								<td>Diseño Gráfico</td>
+						</tr>	
+						<tr>
+						<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">010</a></td>
+								<td>11 de Octubre de 2019</td>
+								<td>Ortografía y redacción</td>
+								<td>Aldo Puga Vega</td>
+								<td>002</td>
+								<td>Administración</td>
+								<td>19304875</td>
+								<td>Rut Abigail Zapata Olvera</td>
+								<td>Diseño gráfico</td>
+						</tr>
+						<tr>
+								<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">010</a></td>
+								<td>16 de Octubre de 2019</td>
+								<td>Química</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>001</td>
+								<td>Administración</td>
+								<td>1930458</td>
+								<td>Gisela Berenice Charles de León</td>
+								<td>Medicina</td>
+						</tr>
+						<tr>
+							<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">011</a></td>
+								<td>17 de Octubre de 2019</td>
+								<td>Cálculo integral</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>001</td>
+								<td>Administración</td>
+								<td>1930425</td>
+								<td>José Ángel López Pérez</td>
+								<td>Ingeniería industrial</td>
+						</tr>
+						<tr>
+						<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">012</a></td>
+								<td>18 de Octubre de 2019</td>
+								<td>Mantenimiento</td>
+								<td>Carlos Vázquez Torres</td>
+								<td>008</td>
+								<td>Mantenimiento</td>
+								<td>1930425</td>
+								<td>José Ángel López Pérez</td>
+								<td>Ingeniería industrial</td>
+						</tr>
+						<tr>
+							<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">013</a></td>
+								<td>19 de Octubre de 2019</td>
+								<td>Fotografía</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>001</td>
+								<td>Administración</td>
+								<td>1930875</td>
+								<td>Rut Abigail Zapata Olvera</td>
+								<td>Diseño Gráfico</td>
+						</tr>
+						<tr>
+							<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">014</a></td>
+								<td>20 de Octubre de 2019</td>
+								<td>Funciones matemáticas</td>
+								<td>Andrea Joseline Charles Santos</td>
+								<td>001</td>
+								<td>Administración</td>
+								<td>1930452</td>
+								<td>José Ángel López Pérez</td>
+								<td>Ingeniería industrial</td>
+						</tr>
+						<tr>
+							<td> <div class="list-icons">
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                	<i class="icon-pencil7"></i>
+				                	</a>
+					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                	<i class="icon-trash"></i>
+				                	</a>
+				                </div>
+								</td>
+									<td><a href="#">015</a></td>
+								<td>25 de Octubre de 2019</td>
+								<td>Administración</td>
+								<td>Daniela Huerta Vázquez</td>
+								<td>006</td>
+								<td>Recursos humanos</td>
+								<td>1930875</td>
+								<td>Rut Abigail Zapata Olvera</td>
+								<td>Diseño Gráfico</td>
+						</tr>
+					</tbody>
+				</table>
 
 
-		            <!-- Remove modal -->
+						<!-- Botón -->
+			<div class="container">			
+				<div class="row">
+
+					<div class="col-lg-4 text-center">
+						<div class="card card-body border-top-primary">
+							<h6 class="m-0 font-weight-semibold">Si desea ingresar alguna tutoría</h6>
+							<p class="text-muted mb-3">De clic aquír</p>
+							<a href="form_input_groups__Agregar_tutoría.php" class="btn btn-outline alpha-purple" t>Ingresar tutoría</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 text-center">
+						<div class="card card-body border-top-primary">
+							<h6 class="m-0 font-weight-semibold">Si desea modificar alguna tutoría</h6>
+							<p class="text-muted mb-3">De clic aquí</p>
+							<a href="form_input_groups_Empresas_Modificar_tutoría.php" class="btn btn-outline alpha-purple" t>Modificar tutoría</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 text-center">
+						<div class="card card-body border-top-primary">
+							<h6 class="m-0 font-weight-semibold">Si desea eliminar alguna tutoría</h6>
+							<p class="text-muted mb-3">De clic aquí</p>
+							<a href="form_input_groups_Eliminar_tutoría.php" class="btn btn-outline alpha-purple" t>Eliminar tutoría</a>
+						</div>
+					</div>
+			
+				</div>
+			</div>
+
+
+	   <!-- Edit modal -->
+					<div id="edit_modal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header bg-transparent">
+									<h5 class="modal-title">Editar tabla</h5>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+
+								<div class="table-responsive aa">
+									<table class="ale"></table>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>ID</th>
+												<th>Fecha de la sesión</th>
+												<th>Tema atendido por el tutor</th>
+												<th>Nombre del empelado (tutor)</th>
+												<th>Número del empleado</th>
+												<th>Departamento asignado</th>
+												<th>Matrícula del alumno</th>
+												<th>Nombre del alumno</th>
+												<th>Carrera que está cursando</th>
+											</tr>
+										</thead>
+										<tbody>
+
+											<tr>
+												<td><input type="numbers" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="numbers" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="numbers" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+
+
+											</tr>									
+										</tbody>
+									</table>
+								</div>
+								<div class="modal-footer bg-transparent">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Guardar cambios</button>
+								</div>
+							</div>
+						</div>
+					</div>		
+		 <!-- Remove modal -->
+						<div id="remove_modal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div style="container">
+										<h5 class="modal-title">Para seguridad ingrese sesión</h5>
+								<form>
+							<div class="container">
+									<div class="signup">
+										<input type="text" placeholder="Usuario:">
+										<input type="text" placeholder="Contraseña:">
+									</div>
+							</div>
+								</form>
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Ingresar</button>
+										<button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+				<!-- Remove modal -->
+				<!--
 						<div id="remove_modal" class="modal fade" role="dialog">
 							<div class="modal-dialog">
 								<div class="modal-content">
@@ -1341,129 +1666,7 @@
 								</div>
 							</div>
 						</div>
-
-	   <!-- Edit modal -->
-					<div id="edit_modal" class="modal fade" role="dialog">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header bg-transparent">
-									<h5 class="modal-title">Editar tabla</h5>
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-								</div>
-
-								<div class="table-responsive aa">
-									<table class="ale"></table>
-									<table class="table">
-										<thead>
-											<tr>
-												<th>Número de empresa</th>
-												<th>Nombre de la empresa</th>
-												<th>Estructura jurídica</th>
-												<th>Dirección</th>
-												<th>Correo electrónico</th>
-												<th>RFC</th>
-												<th>País</th>
-												<th>Ciudad</th>
-												<th>Estado</th>
-												<th>Código postal</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>											
-										</tbody>
-									</table>
-								</div>
-
-								<div class="modal-footer bg-transparent">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Guardar cambios</button>
-								</div>
-							</div>
-						</div>
-					</div>
+					-->
 							<!--
 							<tr>
 								<td>Chantal</td>
@@ -2737,6 +2940,15 @@
 
 	</div>
 	<!-- /page content -->
-
+<!--
+sytle .container {
+  float: left;
+  width: 300px;
+  padding: 30px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+-->
+}
 </body>
 </html>

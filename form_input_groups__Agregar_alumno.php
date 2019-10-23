@@ -23,11 +23,12 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="global_assets/js/plugins/forms/inputs/touchspin.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="global_assets/js/demo_pages/form_input_groups.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -401,6 +402,10 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
 							<a href="index.php" class="nav-link">
@@ -410,9 +415,6 @@
 								</span>
 							</a>
 						</li>
-
-	
-						<!-- /main -->
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Datos</div> <i class="icon-menu" title="Forms"></i></li>
@@ -493,7 +495,10 @@
 							<li class="nav-item"><a href="form_input_groups_Eliminar_Vacaciones.php" class="nav-link">Eliminar vacaciones</a></li>					
 						</ul>
 					</li>
-				</li>
+					<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Transporte</div> <i class="icon-menu" title="Forms"></i></li>
+							<li class="nav-item"><a href="form_input_groups_Solicitud_Transporte.php" class="nav-link">Solicitud de transporte</a></li>				
+						</ul>
+					</li>
 				<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Alumnos</div> <i class="icon-menu" title="Forms"></i></li>
 					<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Alumnos</span></a>
@@ -513,7 +518,7 @@
 						</ul>
 					</li>
 				</li>
-				<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tutoría</div> <i class="icon-menu" title="Forms"></i></li>
+								<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tutoría</div> <i class="icon-menu" title="Forms"></i></li>
 					<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Tutoría</span></a>
 						<ul class="nav nav-group-sub" data-submenu-title="Form components">
@@ -531,10 +536,156 @@
 							<li class="nav-item"><a href="form_input_groups_Eliminar_tutoría.php" class="nav-link">Eliminar tutoría</a></li>
 						</ul>
 					</li>
-				</li>	
+				</li>
+						<!-- Forms -->
 
+						<!--
+
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Advanced inputs</a></li>
+								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Controls</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>Text editors</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">Summernote editor</a></li>
+								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">CKEditor</a></li>
+								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">Trumbowyg editor</a></li>
+								<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-select2"></i> <span>Pickers</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">Date &amp; time pickers</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link">Color pickers</a></li>
+								<li class="nav-item"><a href="picker_location.html" class="nav-link">Location pickers</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
+								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
+					-->
 						<!-- /forms -->
-						
+
+						<!-- Components -->
+						<!--
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
+								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
+								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
+								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
+								<li class="nav-item"><a href="components_collapsible.html" class="nav-link">Collapsible</a></li>
+								<li class="nav-item"><a href="components_navs.html" class="nav-link">Navs</a></li>
+								<li class="nav-item"><a href="components_buttons.html" class="nav-link">Buttons</a></li>
+								<li class="nav-item"><a href="components_popups.html" class="nav-link">Tooltips and popovers</a></li>
+								<li class="nav-item"><a href="components_alerts.html" class="nav-link">Alerts</a></li>
+								<li class="nav-item"><a href="components_pagination.html" class="nav-link">Pagination</a></li>
+								<li class="nav-item"><a href="components_badges.html" class="nav-link">Badges</a></li>
+								<li class="nav-item"><a href="components_progress.html" class="nav-link">Progress</a></li>
+								<li class="nav-item"><a href="components_breadcrumbs.html" class="nav-link">Breadcrumbs</a></li>
+								<li class="nav-item"><a href="components_media.html" class="nav-link">Media objects</a></li>
+								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
+								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
+								<li class="nav-item"><a href="content_page_footer.html" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="content_cards.html" class="nav-link">Cards</a></li>
+								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Card content</a></li>
+								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Card layouts</a></li>
+								<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
+								<li class="nav-item"><a href="content_cards_footer.html" class="nav-link">Card footer elements</a></li>
+								<li class="nav-item"><a href="content_cards_draggable.html" class="nav-link">Draggable cards</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="content_text_styling.html" class="nav-link">Text styling</a></li>
+								<li class="nav-item"><a href="content_typography.html" class="nav-link">Typography</a></li>
+								<li class="nav-item"><a href="content_helpers.html" class="nav-link">Helper classes</a></li>
+								<li class="nav-item"><a href="content_helpers_flex.html" class="nav-link">Flex utilities</a></li>
+								<li class="nav-item"><a href="content_syntax_highlighter.html" class="nav-link">Syntax highlighter</a></li>
+								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
+								<li class="nav-item"><a href="extra_pnotify.html" class="nav-link">PNotify notifications</a></li>
+								<li class="nav-item"><a href="extra_jgrowl_noty.html" class="nav-link">jGrowl and Noty notifications</a></li>
+								<li class="nav-item"><a href="extra_sweetalert.html" class="nav-link">SweetAlert notifications</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="extra_sliders_noui.html" class="nav-link">NoUI sliders</a></li>
+								<li class="nav-item"><a href="extra_sliders_ion.html" class="nav-link">Ion range sliders</a></li>
+								<li class="nav-item"><a href="extra_trees.html" class="nav-link">Dynamic tree views</a></li>
+								<li class="nav-item"><a href="extra_context_menu.html" class="nav-link">Context menu</a></li>
+								<li class="nav-item"><a href="extra_fab.html" class="nav-link">Floating action buttons</a></li>
+								<li class="nav-item"><a href="extra_session_timeout.html" class="nav-link">Session timeout</a></li>
+								<li class="nav-item"><a href="extra_idle_timeout.html" class="nav-link">Idle timeout</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-droplet2"></i> <span>Color system</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Color system">
+								<li class="nav-item"><a href="colors_primary.html" class="nav-link">Primary palette</a></li>
+								<li class="nav-item"><a href="colors_danger.html" class="nav-link">Danger palette</a></li>
+								<li class="nav-item"><a href="colors_success.html" class="nav-link">Success palette</a></li>
+								<li class="nav-item"><a href="colors_warning.html" class="nav-link">Warning palette</a></li>
+								<li class="nav-item"><a href="colors_info.html" class="nav-link">Info palette</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="colors_pink.html" class="nav-link">Pink palette</a></li>
+								<li class="nav-item"><a href="colors_violet.html" class="nav-link">Violet palette</a></li>
+								<li class="nav-item"><a href="colors_purple.html" class="nav-link">Purple palette</a></li>
+								<li class="nav-item"><a href="colors_indigo.html" class="nav-link">Indigo palette</a></li>
+								<li class="nav-item"><a href="colors_blue.html" class="nav-link">Blue palette</a></li>
+								<li class="nav-item"><a href="colors_teal.html" class="nav-link">Teal palette</a></li>
+								<li class="nav-item"><a href="colors_green.html" class="nav-link">Green palette</a></li>
+								<li class="nav-item"><a href="colors_orange.html" class="nav-link">Orange palette</a></li>
+								<li class="nav-item"><a href="colors_brown.html" class="nav-link">Brown palette</a></li>
+								<li class="nav-item"><a href="colors_grey.html" class="nav-link">Grey palette</a></li>
+								<li class="nav-item"><a href="colors_slate.html" class="nav-link">Slate palette</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-spinner2 spinner"></i> <span>Animations</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Animations">
+								<li class="nav-item"><a href="animations_css3.html" class="nav-link">CSS3 animations</a></li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Velocity animations</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="animations_velocity_basic.html" class="nav-link">Basic usage</a></li>
+										<li class="nav-item"><a href="animations_velocity_ui.html" class="nav-link">UI pack effects</a></li>
+										<li class="nav-item"><a href="animations_velocity_examples.html" class="nav-link">Advanced examples</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-thumbs-up2"></i> <span>Icons</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Icons">
+								<li class="nav-item"><a href="icons_icomoon.html" class="nav-link">Icomoon</a></li>
+								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
+								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
+							</ul>
+						</li>
+					-->
+						<!-- /components -->
+
 						<!-- Layout -->
 						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
@@ -871,10 +1022,10 @@
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Basic initialization</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Basic initialization</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
 								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
 								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
@@ -1113,7 +1264,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Empresas</span> - Basic</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Input Groups</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1130,8 +1281,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
-							<span class="breadcrumb-item active">Basic</span>
+							<a href="form_input_groups.php" class="breadcrumb-item">Forms</a>
+							<span class="breadcrumb-item active">Input groups</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1168,10 +1319,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
+				<!-- Input group addons -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Listado de empresas</h5>
+						<h5 class="card-title">Ingresar alumnos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1182,1526 +1333,826 @@
 					</div>
 
 					<div class="card-body">
-						<p>Lista de empresas</p>
+						<p class="mb-4">En este formulario se agregan los datos de los alumnos.</p>
 
-						<div class="btn-group">
-					    	 <button type="button" class="btn btn-outline bg-slate-600 text-slate-600 border-slate dropdown-toggle" data-toggle="dropdown">Ajustes</button>
-					   	 	<div class="dropdown-menu dropdown-menu-right">
-							<a href="form_input_groups_Empresas_Modificar.html" class="dropdown-item"><i class="icon-menu7"></i>Modificar</a>
-							<a href="form_input_groups_Eliminar_Empresas.html" class="dropdown-item"><i class="icon-screen-full"></i>Eliminar</a>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Datos</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">ID</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Número">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Matrícula</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+											</span>
+											<input type="text" class="form-control" placeholder="Ingrese la Matrícula">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre del alumno</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Ingrese el nombre del alumno">
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Carrera que está cursando</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Ingrese carrera">
+											</span>
+										</div>
+									</div>
+								</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-primary">
+							<div class="text-center">
+								<h6 class="m-0 font-weight-semibold">Guardar cambios</h6>
+
+
+		                    	<button type="button" class="btn btn-outline bg-slate-600 text-slate-600 border-slate-600 rounded-round">Ingresar alumnos</button>
+	                    	</div>
+						</div>
+					</div>
+								<!--
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Icon addon</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left icon addon</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-user"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Left icon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Right icon addon</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Right icon">
+											<span class="input-group-append">
+												<span class="input-group-text"><i class="icon-user"></i></span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left and right icon addons</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-menu6"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Left and right icons">
+											<span class="input-group-append">
+												<span class="input-group-text"><i class="icon-inbox"></i></span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Spinner addon</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left spinner addon</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-spinner2 spinner"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Left spinner">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Right spinner addon</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Right spinner">
+											<span class="input-group-append">
+												<span class="input-group-text"><i class="icon-spinner2 spinner"></i></span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left and right spinner addons</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-spinner2 spinner"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Left and right spinners">
+											<span class="input-group-append">
+												<span class="input-group-text"><i class="icon-spinner9 spinner"></i></span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset>
+								<legend class="text-uppercase font-size-sm font-weight-bold">Color options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Contextual class</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text bg-primary border-primary text-white">
+													<i class="icon-pin-alt"></i>
+												</span>
+											</span>
+											<input type="text" class="form-control border-left-0" placeholder="Primary addon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Custom color class</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control border-right-0" placeholder="Pink addon">
+											<span class="input-group-append">
+												<span class="input-group-text bg-pink border-pink text-white">
+													<i class="icon-help"></i>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Color everything</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text bg-slate-700 border-slate-700 text-white">
+													<i class="icon-lock2"></i>
+												</span>
+											</span>
+											<input type="text" class="form-control bg-slate text-white border-transparent" placeholder="Solid background color">
+											<span class="input-group-append">
+												<span class="input-group-text bg-slate-700 border-slate-700 text-white">
+													<i class="icon-help"></i>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			-->
+				<!-- /input group addons -->
+
+
+				<!-- Input group buttons -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Input group buttons</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-4">Optional buttons as addons. Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you'll need to use <code>.input-group-prepend (append)</code> to wrap the buttons. Input group buttons support all available button options except sizing - all buttons height will be adjusted automatically according to the input group size.</p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Button addons</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<button class="btn btn-light" type="button">Button</button>
+											</span>
+											<input type="text" class="form-control" placeholder="Left button">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Right button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Right button">
+											<span class="input-group-append">
+												<button class="btn btn-light" type="button">Button</button>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left and right buttons</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">	
+												<button class="btn btn-light btn-icon" type="button"><i class="icon-user"></i></button>
+											</span>
+											<input type="text" class="form-control" placeholder="Left and right buttons">
+											<span class="input-group-append">
+												<button class="btn btn-light" type="button">Button</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Button dropdown addons</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left button dropdown</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
+				                                <div class="dropdown-menu">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+											<input type="text" class="form-control" placeholder="Left dropdown">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Right button dropdown</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Right dropdown">
+											<div class="input-group-append">
+												<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
+				                                <div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left and right button dropdowns</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
+				                                <div class="dropdown-menu">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+											<input type="text" class="form-control" placeholder="Left and right dropdowns">
+											<div class="input-group-append">
+												<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
+				                                <div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Segmented button addons</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<button type="button" class="btn btn-light">Action</button>
+												<button type="button" class="btn btn-light dropdown-toggle btn-icon" data-toggle="dropdown"></button>
+				                                <div class="dropdown-menu">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+											<input type="text" class="form-control" placeholder="Left buttons">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Right button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Right buttons">
+											<div class="input-group-append">
+												<button type="button" class="btn btn-light">Action</button>
+												<button type="button" class="btn btn-light dropdown-toggle btn-icon" data-toggle="dropdown"></button>
+
+				                                <div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Left and right buttons</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<button type="button" class="btn btn-light">Button</button>
+												<button type="button" class="btn btn-light dropdown-toggle btn-icon" data-toggle="dropdown"></button>
+
+				                                <div class="dropdown-menu">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+
+											<input type="text" class="form-control" placeholder="Left and right buttons">
+
+											<div class="input-group-append">
+												<button type="button" class="btn btn-light btn-icon"><i class="icon-user"></i></button>
+												<button type="button" class="btn btn-light dropdown-toggle btn-icon" data-toggle="dropdown"></button>
+
+				                                <div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a href="#" class="dropdown-item">One more line</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset>
+								<legend class="text-uppercase font-size-sm font-weight-bold">Color options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Contextual button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<button class="btn bg-danger" type="button">Button</button>
+											</span>
+											<input type="text" class="form-control border-left-0" placeholder="Danger button">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Custom color button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control border-right-0" placeholder="Teal button">
+											<span class="input-group-append">
+												<button class="btn bg-teal" type="button">Button</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			-->
+				<!-- /input group buttons -->
+
+
+				<!-- Input group options -->
+				<!--
+				<div class="card mb-4">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Input group options</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-4">Besides default addon options, input groups support different variations of checkboxes, radio buttons, switches, contextual validation state options, icons in different positions. All colors can be easily changed in LESS variables, options and positions also can be mixed. However avoid using <code>&lt;select></code> elements here as they cannot be fully styled in WebKit browsers and <code>&lt;textarea></code> elements here as their rows attribute will not be respected in some cases.</p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Sizing options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Large input group</label>
+									<div class="col-lg-10">
+										<div class="input-group input-group-lg">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-mention"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder=".input-group-lg">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default input group</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-git-pull-request"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder=".input-group">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Small input group</label>
+									<div class="col-lg-10">
+										<div class="input-group input-group-sm">
+											<span class="input-group-prepend">
+												<span class="input-group-text"><i class="icon-statistics"></i></span>
+											</span>
+											<input type="text" class="form-control" placeholder=".input-group-sm">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Validation states</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-success">Valid state</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text alpha-success text-success border-success"><i class="icon-comment"></i></span>
+											</span>
+											<input type="text" class="form-control border-success" placeholder="Success color classes">
+										</div>
+										<span class="form-text text-success">Success state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-danger">Invalid state</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text alpha-danger text-danger border-danger"><i class="icon-graph"></i></span>
+											</span>
+											<input type="text" class="form-control border-danger" placeholder="Danger color classes">
+										</div>
+										<span class="form-text text-danger">Invalid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group form-group-feedback form-group-feedback-right row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-success">Valid with icon</label>
+									<div class="col-lg-10">
+										<div class="position-relative">
+											<div class="input-group">
+												<span class="input-group-prepend">
+													<span class="input-group-text alpha-success text-success border-success"><i class="icon-graduation"></i></span>
+												</span>
+												<input type="text" class="form-control border-success" placeholder="Success color classes">
+											</div>
+											<div class="form-control-feedback text-success">
+												<i class="icon-checkmark-circle"></i>
+											</div>
+										</div>
+										<span class="form-text text-success">Valid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group form-group-feedback form-group-feedback-right row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-danger">Invalid with icon</label>
+									<div class="col-lg-10">
+										<div class="position-relative">
+											<div class="input-group">
+												<span class="input-group-prepend">
+													<span class="input-group-text alpha-danger text-danger border-danger"><i class="icon-droplets"></i></span>
+												</span>
+												<input type="text" class="form-control border-danger" placeholder="Danger color classes">
+											</div>
+											<div class="form-control-feedback text-danger">
+												<i class="icon-cancel-circle2"></i>
+											</div>
+										</div>
+										<span class="form-text text-danger">Error input group helper</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset>
+								<legend class="text-uppercase font-size-sm font-weight-bold">Addon options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default checkbox</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text">
+													<input type="checkbox" checked>
+												</span>
+											</span>
+											<input type="text" class="form-control" placeholder="Default checkbox addon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Styled checkbox</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<div class="input-group-text">
+													<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
+												</div>
+											</span>
+											<input type="text" class="form-control" placeholder="Styled checkbox addon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default radio button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text">
+													<input type="radio" name="addon-radio">
+												</span>
+											</span>
+											<input type="text" class="form-control" placeholder="Unstyled radio addon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Styled radio button</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<div class="input-group-text">
+													<input type="radio" name="addon-radio" class="form-control-styled" checked data-fouc>
+												</div>
+											</span>
+											<input type="text" class="form-control" placeholder="Styled radio addon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Switchery toggle</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-prepend">
+												<span class="input-group-text">
+													<input type="checkbox" class="form-control-switchery" checked data-fouc>
+												</span>
+											</span>
+											<input type="text" class="form-control" placeholder="Switchery toggle addon">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			-->
+				<!-- /input group options -->
+				<!-- Touchspin spinners -->
+				<!--
+				<div class="mb-3">
+					<h6 class="mb-0 font-weight-semibold">
+						Touchspin spinners
+					</h6>
+					<span class="text-muted d-block">Touch friendly input spinner component</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Bootstrap touchspin</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-3">Basically Touchspin uses default Bootstrap <code>input-group</code> component styling with ability to add extra classes to the buttons and addons to match your design perfectly.</p>
+
+								<div class="form-group">
+									<label>Example with postfix: </label>
+									<input type="text" value="55" class="form-control touchspin-postfix">
+								</div>
+
+								<div class="form-group">
+									<label>Example with prefix: </label>
+									<input type="text" value="0" class="form-control touchspin-prefix">
+								</div>
+
+								<div class="form-group">
+									<label>Init with empty value: </label>
+									<input type="text" value="" class="form-control touchspin-empty">
+								</div>
+
+								<div class="form-group">
+									<label>Incremental/decremental step on up/down change: </label>
+									<input type="text" value="10" class="form-control touchspin-step">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced spinners</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-3">Depending on your needs, you can easily swith off mousewheel support, change steps and increments, use more complex examples with button groups and dropdowns.</p>
+
+								<div class="form-group">
+									<label>Button group example</label>
+									<div class="input-group">
+							            <input type="text" class="form-control touchspin-button-group" value="50">
+							            <div class="input-group-append">
+							                <button type="button" class="btn bg-primary">Action</button>
+							                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"></button>
+							                <div class="dropdown-menu dropdown-menu-right">
+							                    <a href="#" class="dropdown-item">Action</a>
+							                    <a href="#" class="dropdown-item">Another action</a>
+							                    <a href="#" class="dropdown-item">Something else here</a>
+							                    <div class="dropdown-divider"></div>
+							                    <a href="#" class="dropdown-item">Separated link</a>
+							                </div>
+							            </div>
+							        </div>
+								</div>
+
+								<div class="form-group">
+									<label>Value attribute is not set: <span class="text-muted">applying settings.initval</span></label>
+									<input type="text" value="" class="form-control touchspin-set-value">
+								</div>
+
+								<div class="form-group">
+									<label>Value is set explicitly to 33: <span class="text-muted">skipping settings.initval</span></label>
+									<input type="text" value="33" class="form-control touchspin-set-value">
+								</div>
+
+								<div class="form-group">
+									<label>No mousewheel support: </label>
+									<input type="text" value="10" class="form-control touchspin-no-mousewheel">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th></th>
-								<th>Número de empresa</th>
-								<th>Nombre de la empresa</th>
-								<th>Estructura jurídica de la empresa</th>
-								<th>Dirección</th>
-								<th>Correo electrónico</th>
-								<th>RFC</th>
-								<th>País</th>
-								<th>Ciudad</th>
-								<th>Estado</th>
-								<th>Código postal</th>
-							</tr>
-						</thead>
-					<tbody>
-							<tr>
-								<td><div class="list-icons">
-					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
-					                			<i class="icon-pencil7"></i>
-				                			</a>
-					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
-					                			<i class="icon-trash"></i>
-				                			</a>
-				                		</div>
-								</td>
-								<td><a href="#">001</a></td>
-								<td>AmbienT</td>
-								<td>Sociedad cooperativa</td>
-								<td>Nueva Ciudad Guerrero</td>
-								<td>AmbienT@hotmail.com</td>
-								<td>AJCS800822569</td>
-								</td>
-								<td>México</td>
-								<td>Cd. Victoria</td>
-								<td>Tamaulipas</td>
-								<td>87010</td>
-							</tr>
-							<tr></tr>
-							<tr>
-								<td> <div class="list-icons">
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
-					                	<i class="icon-pencil7"></i>
-				                	</a>
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
-					                	<i class="icon-trash"></i>
-				                	</a>					
-				                	</div>				
-								</td>
-								<td><a href="#">002</a></td>
-								<td>Globolandia</td>
-								<td>Sociedad anonima</td>
-								<td>Zaragoza Poniente</td>
-											<td class="text-center">GlobosA@hotmail.com</td>
-								<td>CUPU800825569</td>
-								<td>México</td>
-								<td>Cd.Victoria</td>
-								<td>Tamaulipas</td>
-								<td>87000</td>
-							</tr>
-							<tr>
-								<td> <div class="list-icons">
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
-					                		<i class="icon-pencil7"></i>
-				                	</a>
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
-					                		<i class="icon-trash"></i>
-				                	</a>
-				                </div>
-								</td>
-								<td><a href="#">003</a></td>
-								<td>Consultora</td>
-								<td>Sociedad anonima</td>
-								<td>Avenida Nuevas tecnologías</td>
-											<td class="text-center">consultora@hotmail.com</td>
-								<td>COS7008685945</td>
-								<td>México</td>
-								<td>Cd.Victoria</td>
-								<td>Tamaulipas</td>
-								<td>87138</td>
-							</tr>
-							<tr>
-								<td> <div class="list-icons">
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
-					                	<i class="icon-pencil7"></i>
-				                	</a>
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
-					                	<i class="icon-trash"></i>
-				                	</a>
-				                </div>
-								</td>
-								<td><a href="#">004</a></td>
-								<td>Veterinaria: "Los michis"</td>
-								<td>Sociedad cooperativa</td>
-								<td>Enrique Cardenas</td>
-											<td class="text-center">michis@hotmail.com</td>
-								<td>VELM800976</td>
-								<td>México</td>
-								<td>Monterrey</td>
-								<td>Nuevo León.</td>
-								<td>64000</td>
-							</tr>
-							<tr>
-								<td> <div class="list-icons">
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
-					                	<i class="icon-pencil7"></i>
-				                	</a>
-					                <a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
-					                	<i class="icon-trash"></i>
-				                	</a>
-				                </div>
-								</td>
-								<td><a href="#">005</a></td>
-								<td>Tecnologías Milenio</td>
-								<td>Sociedad anonima</td>
-								<td>Zeferino Fajardo</td>
-											<td class="text-center">tecmilenio@hotmail.com</td>
-								<td>TMAN010619</td>
-								<td>México</td>
-								<td>Guadalajara</td>
-								<td>Jalisco</td>
-								<td>44100</td>
-							</tr>
-						</tbody>
-					</table>
+			-->
+				<!-- /touchspin spinners -->
 
 
-		            <!-- Remove modal -->
-						<div id="remove_modal" class="modal fade" role="dialog">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title">Confirm action</h5>
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-									</div>
-
-									<div class="modal-body">
-										Está apunto de eliminar estos datos, ¿está seguro?
-									</div>
-
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">Sí</button>
-										<button type="button" class="btn btn-light" data-dismiss="modal">No</button>
-									</div>
-								</div>
+				<!-- Touchspin layouts -->
+				<!--
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Horizontal spinners</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
 
-	   <!-- Edit modal -->
-					<div id="edit_modal" class="modal fade" role="dialog">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header bg-transparent">
-									<h5 class="modal-title">Editar tabla</h5>
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="card-body">
+								<p class="mb-3">Touchspin supports default Bootstrap <code>input-group</code> component sizing classes, applied to the input or wrapped in <code>div</code> with these classes.</p>
+
+								<div class="form-group">
+									<label>Large spinner</label>
+									<input type="text" value="55" class="form-control form-control-lg touchspin-basic">
 								</div>
 
-								<div class="table-responsive aa">
-									<table class="ale"></table>
-									<table class="table">
-										<thead>
-											<tr>
-												<th>Número de empresa</th>
-												<th>Nombre de la empresa</th>
-												<th>Estructura jurídica</th>
-												<th>Dirección</th>
-												<th>Correo electrónico</th>
-												<th>RFC</th>
-												<th>País</th>
-												<th>Ciudad</th>
-												<th>Estado</th>
-												<th>Código postal</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>
-											<tr>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td><input type="text" class="form-control" value=""></td>
-												<td class="text-center">
-												</td>
-											</tr>											
-										</tbody>
-									</table>
+								<div class="form-group">
+									<label>Default spinner</label>
+									<input type="text" value="55" class="form-control touchspin-basic">
 								</div>
 
-								<div class="modal-footer bg-transparent">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Guardar cambios</button>
+								<div class="form-group">
+									<label>Small spinner</label>
+									<input type="text" value="55" class="form-control form-control-sm touchspin-basic">
 								</div>
 							</div>
 						</div>
 					</div>
-							<!--
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Vertical spinners</h5>
+								<div class="header-elements">
 									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+							<div class="card-body">
+								<p class="mb-3">Also Touchspin library supports <code>vertical</code> spinner controls orientation, that appear on the right side. Buttons and icons are fully customizable.</p>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<div class="form-group">
+									<label>Large spinner</label>
+									<input type="text" value="55" class="form-control form-control-lg touchspin-vertical">
+								</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<div class="form-group">
+									<label>Default spinner</label>
+									<input type="text" value="55" class="form-control touchspin-vertical">
+								</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+								<div class="form-group">
+									<label>Small spinner</label>
+									<input type="text" value="55" class="form-control form-control-sm touchspin-vertical">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			-->
-				<!-- /basic datatable -->
-
-				<!-- Pagination types -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Pagination types</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						The default page control (forward and backward buttons with up to 7 page numbers in-between) is fine for most situations, but in some cases you may wish to customise the options presented to the end user. This is done through DataTables' extensible pagination mechanism, the <code>pagingType</code> option. Supported pagination types are: <code>simple</code>, <code>simple_numbers</code>, <code>full</code> and <code>full_numbers</code>. This example shows <code>simple</code> pagination type.
-					</div>
-
-					<table class="table datatable-pagination">
-						<thead>
-							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Marth</td>
-								<td><a href="#">Enright</a></td>
-								<td>Traffic Court Referee</td>
-								<td>22 Jun 1972</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td><a href="#">Airline Transport Pilot</a></td>
-								<td>3 Oct 1981</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>Business Services Sales Representative</td>
-								<td>19 Apr 1969</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			-->
-				<!-- /pagination types -->
-
-
-				<!-- State saving -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">State saving</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						DataTables has the option of being able to <code>save the state</code> of a table: its paging position, ordering state etc., so that is can be restored when the user reloads a page, or comes back to the page after visiting a sub-page. This state saving ability is enabled by the <code>stateSave</code> option. The <code>duration</code> for which the saved state is valid can be set using the <code>stateDuration</code> initialisation parameter (2 hours by default).
-					</div>
-
-					<table class="table datatable-save-state">
-						<thead>
-							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Marth</td>
-								<td><a href="#">Enright</a></td>
-								<td>Traffic Court Referee</td>
-								<td>22 Jun 1972</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td><a href="#">Airline Transport Pilot</a></td>
-								<td>3 Oct 1981</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>Business Services Sales Representative</td>
-								<td>19 Apr 1969</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			-->
-				<!-- /state saving -->
-
-
-				<!-- Scrollable datatable -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Scrollable datatable</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						This example shows the DataTables table body <code>scrolling</code> in the <code>vertical</code> direction. This can generally be seen as an alternative method to pagination for displaying a large table in a fairly small vertical area, and as such pagination has been disabled here. Note that this is not mandatory, it will work just fine with pagination enabled as well!.
-					</div>
-
-					<table class="table datatable-scroll-y" width="100%">
-						<thead>
-							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Marth</td>
-								<td><a href="#">Enright</a></td>
-								<td>Traffic Court Referee</td>
-								<td>22 Jun 1972</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td><a href="#">Airline Transport Pilot</a></td>
-								<td>3 Oct 1981</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>Business Services Sales Representative</td>
-								<td>19 Apr 1969</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			-->
-				<!-- /scrollable datatable -->
+				<!-- /touchspin layouts -->
 
 			</div>
 			<!-- /content area -->
@@ -2733,7 +2184,7 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /main content -->
+		<!-- /content wrapper -->
 
 	</div>
 	<!-- /page content -->
